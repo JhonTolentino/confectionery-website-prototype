@@ -4,6 +4,13 @@
 @-webkit-viewport {width: device-width; scale: 1;}
 @viewport {width: device-width; scale: 1;}
 
+html {
+  background-color: #8B0000;
+  font-family:'PT Serif', serif;
+  font-size: 0.8rem;
+  font-weight: normal
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,5 +29,5 @@ img {
 }
 
 @media only screen and (min-width: 60em) {
-  
+
 }
