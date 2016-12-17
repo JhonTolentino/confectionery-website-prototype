@@ -11,13 +11,44 @@ html {
   font-weight: normal
 }
 
-h1, h7, h8 {
+h1, h2, h8 {
   font-family: 'Molle', cursive;
   color: #F9E4E4;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2, h8 {
+  font-size: 1.5rem;
+  text-align: left;
+  display: inline;
+}
+
+figcaption {
+  display: inline;
+}
+
+div.ad-content {
+  display: block;
+  text-align: center;
+}
+
+div.content {
+  display: block;
+  text-align: left;
+}
+
+ul {
+  text-align: center;
+  text-decoration: none;
 }
 li {
   font-family: 'Oswald', sans-serif;
   font-size: 1.5rem;
+  display: inline;
 }
 
 * {
@@ -26,17 +57,69 @@ li {
 }
 
 img {
-  display: flex;
+  display: inline-block;
+}
+
+h3, h4, h5, h6, h7 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #F9E4E4;
+  display: block;
+}
+figure {
+    display: inline-block;
+    border: 1px;
+    margin: 20px;
+}
+
+figure img {
+    vertical-align: top;
+}
+
+figure figcaption {
+    border: 1px;
+    text-align: center;
+}
+
+img:first-child {
   width: 100%;
+  float: left;
+  display: block;
+  position: absolute;
 }
 
 @media only screen and (min-width: 25em) {
 
+  img:first-child {
+    width: 100%;
+    float: left;
+    display: block;
+    position: absolute;
+
+  }
+
+  img:nth-child(2+3+4+5) {
+    width: 100%;
+    float: left;
+    display: block;
+  }
+
+  img:last-child {
+    width: 100%;
+    float: left;
+    display: block;
+    padding: 0.5em;
+  }
 }
+
 @media only screen and (min-width: 38em) {
 
 }
-
 @media only screen and (min-width: 60em) {
+
+
+}
+
+@media only screen and (min-width: 90em) {
 
 }
